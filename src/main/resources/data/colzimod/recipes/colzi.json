@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RDR",
+        "DOD",
+        "RDR"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        },
+        "O": {
+            "item": "minecraft:obsidian"
+        }
+    },
+    "result": {
+        "item": "colzimod:colzi",
+        "count": 1
+    }
+}
