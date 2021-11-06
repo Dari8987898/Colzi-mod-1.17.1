@@ -6,7 +6,10 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -22,6 +25,7 @@ public class ColziMod implements ModInitializer {
 	//ITEMS
 	public static final ColziItem COLZI = new ColziItem(new FabricItemSettings().group(ItemGroup.MISC));
 	public static final ColziteIngot COLZITE_INGOT = new ColziteIngot(new FabricItemSettings().group(ItemGroup.MATERIALS));
+	public static ToolItem COLZITE_SWORD = new SwordItem(ColziteSword.INSTANCE, 8, -1.9F, new Item.Settings().group(ItemGroup.COMBAT));
 	
 	//BLOCKS
 	public static final Block COLZITE_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool());
@@ -33,6 +37,7 @@ public class ColziMod implements ModInitializer {
 		//ITEMS
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzi"), COLZI);
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_ingot"), COLZITE_INGOT);
+		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_sword"), COLZITE_SWORD);
 
 		//BLOCKS
 		{
