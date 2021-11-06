@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "colzimod:colzite_ore"
+    },
+    "result": "colzimod:colzite_ingot",
+    "experience": 0.50,
+    "cookingtime": 100
+}
