@@ -24,7 +24,7 @@ public class ColziMod implements ModInitializer {
 	public static final ColziteIngot COLZITE_INGOT = new ColziteIngot(new FabricItemSettings().group(ItemGroup.MATERIALS));
 	
 	//BLOCKS
-	public static final Block COLZITE_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+	public static final Block COLZITE_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool());
 
 
 
