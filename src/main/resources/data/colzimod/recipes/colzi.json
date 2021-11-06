@@ -1,23 +1,23 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "RDR",
-        "DOD",
-        "RDR"
+        "CDC",
+        "DND",
+        "CDC"
     ],
     "key": {
         "D": {
             "item": "minecraft:diamond"
         },
-        "R": {
-            "item": "minecraft:redstone_block"
+        "C": {
+            "item": "colzimod:colzite_ingot"
         },
-        "O": {
-            "item": "minecraft:obsidian"
+        "N": {
+            "item": "minecraft:netherite_scrap"
         }
     },
     "result": {
         "item": "colzimod:colzi",
-        "count": 1
+        "count": 2
     }
 }
