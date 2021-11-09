@@ -37,8 +37,9 @@ public class ColziMod implements ModInitializer {
 	//ITEMS
 	public static final ColziItem COLZI = new ColziItem(new FabricItemSettings().group(ItemGroup.MISC));
 	public static final ColziteIngot COLZITE_INGOT = new ColziteIngot(new FabricItemSettings().group(ItemGroup.MATERIALS));
-	public static ToolItem COLZITE_SWORD = new SwordItem(ColziteSword.INSTANCE, 8, -1.9F, new Item.Settings().group(ItemGroup.COMBAT));
-	
+	public static ToolItem COLZITE_SWORD = new SwordItem(ColziItem.INSTANCE, 8, -1.9F, new Item.Settings().group(ItemGroup.COMBAT));
+	public static ToolItem COLZITE_PICKAXE = new ColzitePickaxe(ColziItem.INSTANCE, 6, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
+
 	//BLOCKS
 	public static final Block COLZITE_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool());
 
@@ -47,12 +48,11 @@ public class ColziMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
 		//ITEMS
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzi"), COLZI);
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_ingot"), COLZITE_INGOT);
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_sword"), COLZITE_SWORD);
+		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_pickaxe"), COLZITE_PICKAXE);
 
 		//BLOCKS
 		{
