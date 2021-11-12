@@ -41,6 +41,7 @@ public class ColziMod implements ModInitializer {
 	public static ToolItem COLZITE_SWORD = new SwordItem(ColziItem.INSTANCE, 8, -1.9F, new Item.Settings().group(ItemGroup.COMBAT));
 	public static ToolItem COLZITE_PICKAXE = new ColzitePickaxe(ColziItem.INSTANCE, 6, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
 	public static ToolItem COLZITE_SHOVEL = new ColziteShovel(ColziItem.INSTANCE, 4, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
+	public static ToolItem COLZITE_AXE = new ColziteAxe(ColziItem.INSTANCE, 10, -3.6F, new Item.Settings().group(ItemGroup.TOOLS));
 
 	//BLOCKS
 	public static final Block COLZITE_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool());
@@ -57,12 +58,11 @@ public class ColziMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_sword"), COLZITE_SWORD);
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_pickaxe"), COLZITE_PICKAXE);
 		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_shovel"), COLZITE_SHOVEL);
+		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_axe"), COLZITE_AXE);
 
 		//BLOCKS
-		{
-			Registry.register(Registry.BLOCK, new Identifier("colzimod", "colzite_ore"), COLZITE_ORE);
-			Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_ore"), new BlockItem(COLZITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-		}
+		Registry.register(Registry.BLOCK, new Identifier("colzimod", "colzite_ore"), COLZITE_ORE);
+		Registry.register(Registry.ITEM, new Identifier("colzimod", "colzite_ore"), new BlockItem(COLZITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
 		//WORLD GENERATION
 		RegistryKey<ConfiguredFeature<?, ?>> colziteOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("colzimod", "colzite_ore"));
