@@ -1,0 +1,12 @@
+{
+    "type": "smithing",
+    "base": {
+        "item": "minecraft:diamond_shovel"
+    },
+    "addition": {
+        "item": "colzimod:colzi"
+    },
+    "result": {
+        "item": "colzimod:colzite_shovel"
+    }
+}
