@@ -1,0 +1,12 @@
+{
+    "type": "smithing",
+    "base": {
+        "item": "minecraft:diamond_axe"
+    },
+    "addition": {
+        "item": "colzimod:colzi"
+    },
+    "result": {
+        "item": "colzimod:colzite_axe"
+    }
+}
